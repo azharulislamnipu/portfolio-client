@@ -43,7 +43,8 @@ module.exports = {
                 {
                     loader:MiniCssExtractPlugin.loader
                 }
-                ,'css-loader','postcss-loader']
+                , 'css-loader', 'resolve-url-loader', 'sass-loader?sourceMap','postcss-loader']
+                
         },
         {
           test: /\.(gif|png|jpe?g|svg)$/i,

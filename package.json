@@ -1,7 +1,7 @@
 {
   "name": "stater",
   "version": "1.0.0",
-  "description": "",
+  "description": "<strong>Run This Command Before Run This Project </strong> <br>",
   "main": "index.js",
   "scripts": {
     "dev": "webpack -w --config=webpack.config.dev.js",
@@ -40,8 +40,17 @@
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^1.1.2",
-    "webpack": "^4.41.0",
+    "webpack": "^4.41.1",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azharulislamnipu/portfolio-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azharulislamnipu/portfolio-client/issues"
+  },
+  "homepage": "https://github.com/azharulislamnipu/portfolio-client#readme"
 }

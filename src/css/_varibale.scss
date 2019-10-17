@@ -1,11 +1,11 @@
 // Font Family
-$lato: 'Lato', sans-serif;
-
+$rubik:  'Rubik', sans-serif;
+$barlow: 'Barlow', sans-serif;
 
 // text Colors ---------------
 
-$black: #29283c;
-$dark: #4d4d4d;
+$black:  #5e6f84;
+$dark: #233142;
 $white: #ffffff;
 $gray: #f1f1f1;
 $red: #f6f7f8;
@@ -26,7 +26,7 @@ $light-gray:#e1e1e1;
 $light-purple:#8193ff;
 
 // Theme Color
-$theme-color: #0060e2;
+$theme-color: #6e45e1;
 
 
 // Responsive Variables 
@@ -41,13 +41,14 @@ $xss-layout:'only screen and (max-width: 480px)';
 
 $assetPath : "../img";
 
-$base-font-size:  15px;
-$line-height:  1.733;
+$base-font-size:  14px;
+$line-height:  1.5;
 
-
+$thin:100;
 $extra-light: 200;
 $light:300;
 $regular: 400;
+$medium:500;
 $semi-bold: 600;
 $bold :700;
 $extra-bold :900;

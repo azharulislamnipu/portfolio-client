@@ -19,13 +19,12 @@ body {
 body {
   background-color: $white;
   font-style: normal;
-  font-family: $lato;
+  font-family: $rubik;
   font-weight: $regular;
   font-size: $base-font-size;
   line-height: $line-height;
-  color: $dark;
+  color: $black;
 }
-
 
 h1,
 h2,
@@ -33,49 +32,53 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $lato;
-  font-weight: $bold;
   margin-top: 0;
-  color: $black;
+  font-family: $barlow;
+  color: $dark;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-weight: $semi-bold;
 }
 
 h1 {
-  font-size: ceil($base-font-size*3.333);
-  line-height: 1.2;
+  font-size: ceil($base-font-size*3.214);
+  line-height: 1.5;
 }
 
 h2 {
-  font-size: ceil($base-font-size*2.666);
-  line-height: 0.75;
+  font-size: ceil($base-font-size*2.57);
+  line-height: 1.5;
 }
 
 h3 {
-  font-size: ceil($base-font-size*1.666);
-  line-height: 2.16;
-  @media #{$lg-layout,$md-layout,$xs-layout} {
-    font-size: 20px;
-  }
+  font-size: ceil($base-font-size*2.143);
+  line-height: 1.5;
 }
 
 h4 {
-  font-size: ceil($base-font-size*1.3333);
-  line-height: 1.4;
+  font-size: ceil($base-font-size*1.714);
+  line-height: 1.5;
 }
 
 h5 {
-  font-size: ceil($base-font-size*1.2);
-  line-height: 1.556;
+  font-size: ceil($base-font-size*1.428);
+  line-height: 1.5;
 }
 
-
 h6 {
-  font-size: ceil($base-font-size+1);
-  line-height: 1.25;
+  font-size: ceil($base-font-size*1.143);
+  line-height: 1.5;
 }
 
 p {
-  margin-bottom: 15px;
+  font-size:$base-font-size;
+  font-family: "Rubik", sans-serif;
+  color: $black;
+  font-weight: $regular;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
+
 
 
 p:last-child {
@@ -83,7 +86,7 @@ p:last-child {
 }
 
 .btn {
-  font-family: $lato;
+  font-family: $barlow;
   font-size: $base-font-size;
   background-color: $blue;
   color: $white;
@@ -104,7 +107,7 @@ p:last-child {
 a.btn {
   background-color: $blue;
   color: $white;
-
+  font-family: $barlow;
   &:hover, &:focus {
     box-shadow: none;
     outline: none;
@@ -116,7 +119,7 @@ a.btn {
 a,
 button {
   color: $black;
-  font-family: $lato;
+  font-family: $barlow;
   line-height: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -129,7 +132,13 @@ input,
 span {
   transition: all .3s ease 0s;
 }
-
+a:active,
+a:focus,
+input,
+select,
+textarea {
+  outline: none !important;
+}
 img {
   max-width: 100%;
 }
@@ -190,7 +199,6 @@ ul {
   background-position: center center;
   background-size: cover;
 }
-
 
 .box-shadow {
   box-shadow: 0px 5px 50px 0px rgba(7, 51, 112, 0.08);
@@ -1314,7 +1322,12 @@ ul {
 /*-- 
     - Input Placeholder
 -----------------------------------------*/
-
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   opacity: 1;
@@ -1354,7 +1367,7 @@ ol, ul {
   border: none;
   border-radius: 0;
   box-shadow: none;
-  font-family: $lato;
+  font-family: $barlow;
   font-size: $base-font-size;
   &::-webkit-input-placeholder {
     color: #b1b1b1;
@@ -1378,7 +1391,7 @@ ol, ul {
   border-color: $gray;
   border-radius: 0;
   box-shadow: none;
-  font-family: $lato;
+  font-family: $barlow;
   font-size: $base-font-size;
   &::-webkit-input-placeholder {
     color: #b1b1b1;

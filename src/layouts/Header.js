@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -6,11 +6,37 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-export default function Header() {
-    return (
-            <header>
+import Reveal from 'react-reveal/Fade';
+export default class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state ={
+            scrolled:false
+        };
+      }
+
+    componentDidMount(){
+        window.addEventListener('scroll',() => {
+            const isScroll = window.scrollY < 100;
+
+            if(isScroll !== true){
+                this.setState({ scrolled:true});
+            }else{
+                this.setState({ scrolled:false});
+            }
+
+        });
+    }
+    componentWillUnmount(){
+        window.removeEventListener('scroll');
+    }
+    render() {
+        return (
+                     
+            <Reveal  duration={3000}>        
+                 <header className={this.state.scrolled ? 'header-area sticky-menu fadeInUp': 'header-area fadeInDown'}>
             <Container>
-                <Navbar bg="light" expand="lg">
+                <Navbar>
                     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -33,6 +59,7 @@ export default function Header() {
                 </Navbar>
             </Container>
             </header>
-     
-    )
+            </Reveal>
+        );
+    }
 }

@@ -1,0 +1,20 @@
+.header-area.sticky-menu {
+    background-color:$slateblue;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    transition: padding 400ms ease;
+    box-shadow: 0 5px 30px rgba(164, 164, 164, 0.1);
+}
+.header-area {
+    background-color: $slateblue;
+}
+
+.banner{
+    height: 100vh;
+    background: red;
+    padding: 300px 0;
+}

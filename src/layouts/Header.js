@@ -3,17 +3,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Reveal from 'react-reveal/Fade';
+import logo from '../img/header.png'
+import { IoIosSearch } from "react-icons/io";
 export default class Header extends Component {
     constructor(props) {
         super(props);
         this.state ={
-            scrolled:false
+            scrolled:false,
+            close:false
         };
       }
+
 
     componentDidMount(){
         window.addEventListener('scroll',() => {
@@ -30,19 +32,36 @@ export default class Header extends Component {
     componentWillUnmount(){
         window.removeEventListener('scroll');
     }
+
+    handleClick(e) {
+
+        
+       
+      }
+
+
     render() {
+
+
+
         return (
-                     
-            <Reveal  duration={3000}>        
-                 <header className={this.state.scrolled ? 'header-area sticky-menu fadeInUp': 'header-area fadeInDown'}>
+                      
+       
+                 <header className={this.state.scrolled ? 'header-area sticky-menu ': 'header-area '}>
+          
             <Container>
-                <Navbar>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar expand="lg">
+                    <Navbar.Brand href="#home">
+                        <img src={logo} alt="logo"/>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={this.handleClick} />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
+                        <Nav className="m-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                        <Nav.Link href="#About">About</Nav.Link>
+                        <Nav.Link href="#Service">Service</Nav.Link>
+                        <Nav.Link href="#Porfolio">Porfolio</Nav.Link>
+                       
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -52,14 +71,17 @@ export default class Header extends Component {
                         </NavDropdown>
                         </Nav>
                         <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
+                        <a href="#" className="btn  rounded mr-30">Request demo</a>
+                       
+                        
+                        <Button className='search-btn left-border'><IoIosSearch/></Button>
                         </Form>
                     </Navbar.Collapse>
                 </Navbar>
             </Container>
+    
             </header>
-            </Reveal>
+           
         );
     }
 }

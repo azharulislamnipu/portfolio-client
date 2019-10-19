@@ -6,15 +6,70 @@
     width: 100%;
     z-index: 9;
     left: 0;
-    transition: padding 400ms ease;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     box-shadow: 0 5px 30px rgba(164, 164, 164, 0.1);
+    animation: stuckMoveDown .6s;
 }
 .header-area {
     background-color: $slateblue;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    animation: stuckMoveUp .6s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 20px 15px;
+    position: relative;
+    font-family: $barlow;
+    font-weight: $regular;
+    font-size: $base-font-size+3;
+    line-height: $line-height;
+    text-transform: capitalize;
+    color: $white;
+    font-weight: $medium;
+    justify-content: center;
+    align-items: center;
+    &:hover, &:focus{
+        color: $red;
+    }
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+ .navbar-light .navbar-nav .nav-link.active,
+ .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show > .nav-link{
+    color: $red;
 }
 
 .banner{
     height: 100vh;
-    background: red;
+    background: $red;
     padding: 300px 0;
+}
+
+
+@keyframes stuckMoveDown {
+    0% {
+        transform: translateY(-100%)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+@keyframes stuckMoveUp {
+    0% {
+        transform: translateY(100%)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+@keyframes stuckFadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
 }

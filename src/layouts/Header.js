@@ -55,7 +55,7 @@ export default class Header extends Component {
         return (
                       
        
-                 <header className={this.state.scrolled ? 'header-area sticky-menu ': 'header-area '}>
+          <header className={this.state.scrolled ? 'header-area sticky-menu ': 'header-area '}>
           
             <Container>
                 <Navbar expand="lg">

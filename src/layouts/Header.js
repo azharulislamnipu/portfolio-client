@@ -23,6 +23,7 @@ export default class Header extends Component {
             isToggleOn:false
         };
         this.handleClick = this.handleClick.bind(this);
+        this.searchToogle = this.searchToogle.bind(this);
       }
 
 
@@ -60,7 +61,6 @@ export default class Header extends Component {
             
       hoverOff = () => { 
         this.setState({ hover: false });    
-
       }
       searchToogle = () =>{
         this.setState(state => ({
@@ -76,8 +76,6 @@ export default class Header extends Component {
                 searchField:false
              })
           }
-
-
       }
 
       searchIconChange = () =>{
@@ -88,13 +86,9 @@ export default class Header extends Component {
            );
       }
 
-      
-
 
     render() {
         return (
-                      
-       
           <header className={this.state.scrolled ? 'header-area sticky-menu ': 'header-area '}>
           
             <Container>

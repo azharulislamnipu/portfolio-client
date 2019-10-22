@@ -5,14 +5,22 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import FormControl from 'react-bootstrap/FormControl';
+import InputGroup  from 'react-bootstrap/InputGroup';
 import logo from '../img/header.png'
 import { IoIosSearch, IoMdMenu , IoMdClose} from "react-icons/io";
+import Fade from 'react-reveal/Fade';
 export default class Header extends Component {
     constructor(props) {
         super(props);
         this.state ={
             scrolled:false,
-            isNavbarCollapsed:false
+            isNavbarCollapsed:false,
+            hover: false,
+            disabled:false,
+            isSearch:false,
+            searchField:false,
+            isToggleOn:false
         };
         this.handleClick = this.handleClick.bind(this);
       }
@@ -46,12 +54,44 @@ export default class Header extends Component {
       <span><IoMdMenu/></span>
         );
     }
+        hoverOn = (e) =>{
+            this.setState({ hover: true, disabled:true });
+        }
+            
+      hoverOff = () => { 
+        this.setState({ hover: false });    
+
+      }
+      searchToogle = () =>{
+        this.setState(state => ({
+            isSearch: !state.isSearch
+          }));
+
+          if(this.state.isSearch== false){
+             this.setState({
+                searchField:true
+             })
+          }else{
+            this.setState({
+                searchField:false
+             })
+          }
+
+
+      }
+
+      searchIconChange = () =>{
+        return this.state.isSearch ? (
+           <IoMdClose/>
+           ) : (
+           <IoIosSearch/>
+           );
+      }
+
+      
 
 
     render() {
-
-
-
         return (
                       
        
@@ -69,20 +109,36 @@ export default class Header extends Component {
                         <Nav.Link href="#About">About</Nav.Link>
                         <Nav.Link href="#Service">Service</Nav.Link>
                         <Nav.Link href="#Porfolio">Porfolio</Nav.Link>
-                       
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                     
+                        <NavDropdown title="Blog" id="basic-nav-dropdown"  className={ this.state.hover ? "show" : " "}   onMouseEnter={this.hoverOn} 
+            onMouseLeave={this.hoverOff}  disabled={this.state.hover ? "disabled" : " "}>
+                     
+                            <NavDropdown.Item href="#action/3.1">Messonary</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.2">Two Column</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.3">Slider</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        
                         </NavDropdown>
+                      
+                 
                         </Nav>
                         <Form inline>
-                        <a href="#" className="btn  rounded mr-30">Request demo</a>
                        
-                        
-                        <Button className='search-btn left-border'><IoIosSearch/></Button>
+                        <InputGroup className={this.state.searchField ? " w-100" : "serach-box"}>
+                        <a href="#" className="btn request-btn  rounded mr-30">Request demo</a>
+                        <FormControl 
+                        placeholder="Search"
+                        aria-label="search"
+                        aria-describedby="search"
+                        className={this.state.searchField ? "d-flex search-in" : "d-none"}
+                        />
+                        <Button children={this.searchIconChange()} className='search-btn left-border' onClick={this.searchToogle}>
+                        </Button>
+                        </InputGroup>
+                       
                         </Form>
                     </Navbar.Collapse>
                 </Navbar>

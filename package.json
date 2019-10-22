@@ -1,7 +1,7 @@
 {
     "name": "stater",
     "version": "1.0.0",
-    "description": "<strong>Run This Command Before Run This Project </strong> <br>",
+    "description": "",
     "main": "index.js",
     "scripts": {
         "dev": "webpack -w --config=webpack.config.dev.js",
@@ -32,8 +32,9 @@
         "react": "^16.10.2",
         "react-bootstrap": "^1.0.0-beta.14",
         "react-dom": "^16.10.2",
-        "react-reveal": "^1.2.2",
+        "react-icons": "^3.7.0",
         "react-router-dom": "^5.1.2",
+        "react-sticky": "^6.0.3",
         "redux": "^4.0.4",
         "redux-devtools": "^3.5.0",
         "resolve-url-loader": "^3.1.0",
@@ -41,8 +42,11 @@
         "style-loader": "^0.23.1",
         "uglifyjs-webpack-plugin": "^2.2.0",
         "url-loader": "^1.1.2",
-        "webpack": "^4.41.1",
+        "webpack": "^4.41.0",
         "webpack-cli": "^3.3.9",
         "webpack-dev-server": "^3.8.2"
+    },
+    "dependencies": {
+        "react-reveal": "^1.2.2"
     }
 }

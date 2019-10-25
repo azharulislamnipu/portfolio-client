@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 export default class About extends Component {
     render() {
         return (
-            <section id='about' className='about-area'>
+            <section id='about' className='about-area ptb-100'>
                 <Container>
                    <Row>
                        <Col lg={6} md={5} sm={12}>

@@ -5,7 +5,7 @@ import playbutton from '../../img/svg/play-button.svg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 export default class Banner extends Component {
     render() {
         return (
@@ -39,11 +39,14 @@ export default class Banner extends Component {
                         <Row className="pt-2 pb-2"> 
                   
                         <Col>
-                        <a href="#about" className="down">
-                                        <span className="down-one"></span>
+
+                        <AnchorLink href='#about' offset='100' className="down">
+                        <span className="down-one"></span>
                                         <span className="down-two">About Me</span>
-                                        <span className="down-three"></span>         
-                                    </a>
+                                        <span className="down-three"></span>
+                        </AnchorLink>
+
+                
                                     </Col>
                     
                     </Row>

@@ -122,11 +122,16 @@
     font-weight: $medium;
     justify-content: center;
     align-items: center;
+
     &:hover,
     &:focus {
         color: $white;
         background-color: $light-aqua;
     }
+}
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: $light-aqua;
 }
 
 .dropdown-divider {

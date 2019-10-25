@@ -1,31 +1,36 @@
 import React, { Component } from 'react';
 import CounterItem from './CounterItem';
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 export default class Counters extends Component {
 
   state = {
-    data: [{
+    counterItems: [{
       counternumber: 490,
       type:"lins of code",
-      icon:'faCoffee'
+      icon:'fa-code',
+      duration:2
     
     },
     {
       counternumber: 545,
       type:"Cup of Tea",
-      icon:'faCoffee'
+      icon:'fa-coffee',
+      duration:2.5
     
     },
     {
-      counternumber: 490,
+      counternumber: 690,
       type:"lins of code",
-      icon:'faCoffee'
+      icon:'fa-rocket',
+      duration:3
     
     },
     {
       counternumber: 990,
       type:"lins of code",
-      icon:'faCoffee'
+      icon:'fa-heart-o',
+      duration:4
     
     },
       
@@ -36,8 +41,8 @@ export default class Counters extends Component {
 
 
 showCounterItem = () => (
-  this.state.data.map((items,key) => (
-      <CounterItem key={key} number={items.counternumber} type={items.type} icon={items.icon} />
+  this.state.counterItems.map((items,key) => (
+      <CounterItem key={key} number={items.counternumber} type={items.type} icon={items.icon} duration={items.duration} />
   ))
 )
 
@@ -45,15 +50,13 @@ showCounterItem = () => (
   render() {
 
     return (
-      <div className="counter-area">
-        <div className="container">
-          <div className="row align-items-center">
-         
+      <section className="counter-area">
+        <Container>
+          <Row className="align-items-center">
            {this.showCounterItem()}
-          
-          </div>
-        </div>
-      </div>
+          </Row>
+          </Container>
+      </section>
     )
   }
 }

@@ -1,27 +1,20 @@
 import React from 'react'
 import CountUp from 'react-countup';
-import { IoIosCode  } from "react-icons/io";
-import {  FaAccessibleIcon} from "react-icons/fa";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee,faThumbsUp  } from '@fortawesome/free-solid-svg-icons'
-const CounterItem = ({number,type,icon}) => {
-  library.add(fab, faCheckSquare, faCoffee);
+import IconGenerate from '../../ui' 
+import Col from 'react-bootstrap/Col';
+const CounterItem = ({number,type,icon,duration}) => {
+
   return (
 
-              <div className="col-lg-3 col-md-3 col-sm-12 text-center">
-              
+              <Col lg={3} md={3} sm={6}  className="text-center">
                 <div className="growth-counter">
-          
-                <div className="counter-icon"><FaAccessibleIcon/></div>
-               
+                <div className="counter-icon"> <IconGenerate className={icon}/></div>
                 <h3 className="growth-counter-number-wrapper">
-                <CountUp end={number}  duration={2.75} delay={1}/>
+                <CountUp end={number}  duration={duration} delay={1}/>
                 </h3>
                 <div className="growth-counter-title">  {type} </div>
               </div>
-              </div>
+              </Col>
  
   )
 }

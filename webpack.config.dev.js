@@ -46,8 +46,9 @@ module.exports = {
                 , 'css-loader', 'resolve-url-loader', 'sass-loader?sourceMap','postcss-loader']
                 
         },
+      
         {
-          test: /\.(gif|png|jpe?g|svg)$/i,
+          test: /\.(gif|png|jpe?g|svg|svg|woff|woff2|ttf|eot)$/i,
           use: [
               {
                 loader: 'url-loader',

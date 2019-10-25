@@ -1,0 +1,75 @@
+import React, { Component } from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+export default class About extends Component {
+    render() {
+        return (
+            <section id='about' className='about-area'>
+                <Container>
+                   <Row>
+                       <Col lg={6} md={5} sm={12}>
+                          <div className="about-img">
+                            <div className="box-img">
+                                <img src="assets/images/about/about.jpg" alt="About-me"/>
+                            </div>
+                            </div>
+                       </Col>
+                       <Col  lg={6} md={7} sm={12}>
+
+                       <div className="info-about">
+                   
+                    <div className="section-title-left">
+                        <h2>I'm Nour Eldin</h2>
+                        <h3>I'm Creative UI/UX Designer <br/> And Developer Based In New york</h3>
+                    </div>
+                    
+                    <p className="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                    
+                    <p className="mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna.</p>
+                    
+                    <div className="profile">
+                        <div className="row">
+                            <div className="col-md-6">
+                                <p>Name: <span>Nour Eldin</span></p>
+                            </div>
+
+                            <div className="col-md-6">
+                                <p>Age: <span>25</span></p>
+                            </div>
+
+                            <div className="col-md-6">
+                                <p>Phone: <span>+011 499 123 18</span></p>
+                            </div>
+
+                            <div className="col-md-6">
+                                <p>Address: <span>New York, USA</span></p>
+                            </div>
+                            
+                            <div className="col-md-6">
+                                <p>Freelance: <span>Available</span></p>
+                            </div>
+
+                            <div className="col-md-6">
+                                <p>Nationality: <span>American</span></p>
+                            </div>
+                            
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    
+                    <div className="follow-me">
+                        <p>Follow Me : </p>
+                   
+
+                    </div>
+            </div>
+                       </Col>
+                    </Row> 
+                </Container>
+            </section>
+        )
+    }
+}

@@ -11,6 +11,10 @@
     "author": "Azhar",
     "license": "ISC",
     "devDependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.25",
+        "@fortawesome/free-brands-svg-icons": "^5.11.2",
+        "@fortawesome/free-solid-svg-icons": "^5.11.2",
+        "@fortawesome/react-fontawesome": "^0.1.7",
         "autoprefixer": "^9.6.5",
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.5",
@@ -35,6 +39,7 @@
         "react-bootstrap": "^1.0.0-beta.14",
         "react-countup": "^4.2.2",
         "react-dom": "^16.10.2",
+        "react-fontawesome": "^1.6.1",
         "react-icons": "^3.7.0",
         "react-reveal": "^1.2.2",
         "react-router-dom": "^5.1.2",

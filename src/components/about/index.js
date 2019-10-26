@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import about from '../../../src/img/about.jpg'
 export default class About extends Component {
     render() {
         return (
@@ -11,7 +12,7 @@ export default class About extends Component {
                        <Col lg={6} md={5} sm={12}>
                           <div className="about-img">
                             <div className="box-img">
-                                <img src="assets/images/about/about.jpg" alt="About-me"/>
+                                <img src={about} alt="About-me"/>
                             </div>
                             </div>
                        </Col>
@@ -62,6 +63,14 @@ export default class About extends Component {
                     
                     <div className="follow-me">
                         <p>Follow Me : </p>
+                        <ul className="social-media-about">
+                           <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
+                           <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i className="fa fa-instagram"></i></a></li>
+                           <li><a href="#"><i className="fa fa-dribbble"></i></a></li>
+                           <li><a href="#"><i className="fa fa-behance"></i></a></li>
+                           <li><a href="#"><i className="fa fa-youtube"></i></a></li>
+                        </ul>
                    
 
                     </div>

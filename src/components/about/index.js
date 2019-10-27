@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import about from '../../../src/img/about.jpg'
+import about from '../../../src/img/about.jpg';
+import Tag from '../../../src/ui/icon' ;
 export default class About extends Component {
     render() {
         return (
@@ -30,33 +31,32 @@ export default class About extends Component {
                     <p className="mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna.</p>
                     
                     <div className="profile">
-                        <div className="row">
-                            <div className="col-md-6">
+                    <Row>
+                            <Col lg={6} md={6} sm={12}>
                                 <p>Name: <span>Nour Eldin</span></p>
-                            </div>
+                                </Col>
 
-                            <div className="col-md-6">
+                                <Col lg={6} md={6} sm={12}>
                                 <p>Age: <span>25</span></p>
-                            </div>
+                                </Col>
 
-                            <div className="col-md-6">
+                                <Col lg={6} md={6} sm={12}>
                                 <p>Phone: <span>+011 499 123 18</span></p>
-                            </div>
+                                </Col>
 
-                            <div className="col-md-6">
+                                <Col lg={6} md={6} sm={12}>
                                 <p>Address: <span>New York, USA</span></p>
-                            </div>
+                                </Col>
                             
-                            <div className="col-md-6">
+                                <Col lg={6} md={6} sm={12}>
                                 <p>Freelance: <span>Available</span></p>
-                            </div>
+                                </Col>
 
-                            <div className="col-md-6">
+                                <Col lg={6} md={6} sm={12}>
                                 <p>Nationality: <span>American</span></p>
-                            </div>
-                            
-                            
-                        </div>
+                                </Col>
+                                 
+                      </Row> 
                     
                     </div>
                     

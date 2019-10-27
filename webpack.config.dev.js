@@ -31,7 +31,7 @@ module.exports = {
   },
   devtool:'sourcemap',
   module: {
-    rules: [
+    rules: [ 
         {
         test: /\.(js|jsx)$/,
         use: {loader: 'babel-loader'},

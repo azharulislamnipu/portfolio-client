@@ -4,6 +4,7 @@ import HeroBanner from '../components/banner';
 import Counter from '../components/counter';
 import About from '../components/about';
 import Experience from '../components/experience';
+import Skills from '../components/skills';
 
 export default class Home extends Component {
     render() {
@@ -15,6 +16,7 @@ export default class Home extends Component {
         <Counter/>
         <About/>
         <Experience/>
+        <Skills/>
         </div>
         )
     }

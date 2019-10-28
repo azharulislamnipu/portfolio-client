@@ -46,8 +46,7 @@ export default class Banner extends Component {
                                         <span className="down-three"></span>
                         </AnchorLink>
 
-                
-                                    </Col>
+                       </Col>       
                     
                     </Row>
 

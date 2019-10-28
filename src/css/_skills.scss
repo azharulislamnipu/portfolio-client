@@ -1,0 +1,188 @@
+            /* 9. skills CSS
+/*----------------------------------------*/
+            
+            .skills-area {
+                position: relative;
+                overflow: hidden;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding: 120px 0px 120px 0px;
+                background-color: #FFC576;
+            }
+            
+            .progress-title {
+                position: absolute;
+                top: -25px;
+                bottom: auto;
+            }
+            
+            .fourtypercent {
+                position: relative;
+                .progress-title {
+                    left: 40%;
+                    width: 0;
+                    animation: fourtypercent 2s ease-in-out forwards;
+                }
+                .progress-bar {
+                    width: 0;
+                    animation: fourtypercent 2s ease-in-out forwards;
+                }
+                @keyframes fourtypercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 40%;
+                    }
+                }
+            }
+            
+            .fiftypercent {
+                .progress-bar {
+                    width: 0;
+                    animation: fiftypercent 2.5s ease-in-out forwards;
+                }
+                @keyframes fiftypercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 50%;
+                    }
+                }
+            }
+            
+            .sixtypercent {
+                .progress-bar {
+                    width: 0;
+                    animation: sixtypercent 3s ease-in-out forwards;
+                }
+                @keyframes sixtypercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 60%;
+                    }
+                }
+            }
+            
+            .sixtyfivepercent {
+                .progress-bar {
+                    width: 0;
+                    animation: sixtyfivepercent 3.5s ease-in-out forwards;
+                }
+                @keyframes sixtyfivepercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 65%;
+                    }
+                }
+            }
+            
+            .seventyepercent {
+                .progress-bar {
+                    width: 0;
+                    animation: seventyepercent 4s ease-in-out forwards;
+                }
+                @keyframes seventyepercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 70%;
+                    }
+                }
+            }
+            
+            .seventyfivepercent {
+                .progress-bar {
+                    width: 0;
+                    animation: seventyfivepercent 4.5s ease-in-out forwards;
+                }
+                @keyframes seventyfivepercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 75%;
+                    }
+                }
+            }
+            
+            .eightypercent {
+                .progress-bar {
+                    width: 0;
+                    animation: eightypercent 1s ease-in-out forwards;
+                }
+                @keyframes eightypercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 80%;
+                    }
+                }
+            }
+            
+            .eightyfivepercent {
+                .progress-bar {
+                    width: 0;
+                    animation: eightyfivepercent 3s ease-in-out forwards;
+                }
+                @keyframes eightyfivepercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 85%;
+                    }
+                }
+            }
+            
+            .ninetypercent {
+                .progress-bar {
+                    width: 0;
+                    animation: ninetypercent 2s ease-in-out forwards;
+                }
+                @keyframes ninetypercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 90%;
+                    }
+                }
+            }
+            
+            .ninetyfivepercent {
+                .progress-bar {
+                    width: 0;
+                    animation: ninetyfivepercent 3s ease-in-out forwards;
+                }
+                @keyframes ninetyfivepercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 95%;
+                    }
+                }
+            }
+            
+            .hundreapercent {
+                .progress-bar {
+                    width: 0;
+                    animation: hundreapercent 3s ease-in-out forwards;
+                }
+                @keyframes hundreapercent {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 100%;
+                    }
+                }
+            }

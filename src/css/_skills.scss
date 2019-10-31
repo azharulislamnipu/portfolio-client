@@ -12,16 +12,33 @@
             
             .progress-title {
                 position: absolute;
-                top: -25px;
+                top: -30px;
                 bottom: auto;
+                width: 40px;
+                height: 30px;
+                line-height: 30px;
+                background: #1f2235;
+                color: $white;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+            .progress {
+                height: 30px;
+                border-radius: 0;
+                background-color: #ffffff;
+            }
+            
+            .progress-bar {
+                background-color: #1f2235;
             }
             
             .fourtypercent {
                 position: relative;
                 .progress-title {
-                    left: 40%;
-                    width: 0;
-                    animation: fourtypercent 2s ease-in-out forwards;
+                    left: 0;
+                    animation: textanimation 2s ease-in-out forwards;
                 }
                 .progress-bar {
                     width: 0;
@@ -35,12 +52,33 @@
                         width: 40%;
                     }
                 }
+                @keyframes textanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 40%;
+                    }
+                }
             }
             
             .fiftypercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
                     animation: fiftypercent 2.5s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: fiftytextanimation 2.5s ease-in-out forwards;
+                }
+                @keyframes fiftytextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 50%;
+                    }
                 }
                 @keyframes fiftypercent {
                     from {
@@ -53,9 +91,22 @@
             }
             
             .sixtypercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
                     animation: sixtypercent 3s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: sixtytextanimation 3s ease-in-out forwards;
+                }
+                @keyframes sixtytextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 60%;
+                    }
                 }
                 @keyframes sixtypercent {
                     from {
@@ -68,9 +119,22 @@
             }
             
             .sixtyfivepercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
                     animation: sixtyfivepercent 3.5s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: sixtyfivetextanimation 3.5s ease-in-out forwards;
+                }
+                @keyframes sixtyfivetextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 65%;
+                    }
                 }
                 @keyframes sixtyfivepercent {
                     from {
@@ -83,9 +147,22 @@
             }
             
             .seventyepercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
                     animation: seventyepercent 4s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: seventytextanimation 4s ease-in-out forwards;
+                }
+                @keyframes seventytextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 70%;
+                    }
                 }
                 @keyframes seventyepercent {
                     from {
@@ -98,9 +175,22 @@
             }
             
             .seventyfivepercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
                     animation: seventyfivepercent 4.5s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: seventyfivetextanimation 4.5s ease-in-out forwards;
+                }
+                @keyframes seventyfivetextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 70%;
+                    }
                 }
                 @keyframes seventyfivepercent {
                     from {
@@ -113,9 +203,22 @@
             }
             
             .eightypercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
-                    animation: eightypercent 1s ease-in-out forwards;
+                    animation: eightypercent 5s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: eightytextanimation 5s ease-in-out forwards;
+                }
+                @keyframes eightytextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 80%;
+                    }
                 }
                 @keyframes eightypercent {
                     from {
@@ -128,9 +231,22 @@
             }
             
             .eightyfivepercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
                     animation: eightyfivepercent 3s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: eightyfivtextanimation 3s ease-in-out forwards;
+                }
+                @keyframes eightyfivtextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 85%;
+                    }
                 }
                 @keyframes eightyfivepercent {
                     from {
@@ -143,9 +259,22 @@
             }
             
             .ninetypercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
-                    animation: ninetypercent 2s ease-in-out forwards;
+                    animation: ninetypercent 3.5s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: ninetytextanimation 3.5s ease-in-out forwards;
+                }
+                @keyframes ninetytextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 90%;
+                    }
                 }
                 @keyframes ninetypercent {
                     from {
@@ -158,9 +287,22 @@
             }
             
             .ninetyfivepercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
-                    animation: ninetyfivepercent 3s ease-in-out forwards;
+                    animation: ninetyfivepercent 3.5s ease-in-out forwards;
+                }
+                .progress-title {
+                    left: 0;
+                    animation: ninetyfivtextanimation 3.5s ease-in-out forwards;
+                }
+                @keyframes ninetyfivtextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 95%;
+                    }
                 }
                 @keyframes ninetyfivepercent {
                     from {
@@ -172,12 +314,25 @@
                 }
             }
             
-            .hundreapercent {
+            .hundreadpercent {
+                position: relative;
                 .progress-bar {
                     width: 0;
-                    animation: hundreapercent 3s ease-in-out forwards;
+                    animation: hundreadpercent 3s ease-in-out forwards;
                 }
-                @keyframes hundreapercent {
+                .progress-title {
+                    left: 0;
+                    animation: hundreadtextanimation 3s ease-in-out forwards;
+                }
+                @keyframes hundreadtextanimation {
+                    from {
+                        left: 0;
+                    }
+                    to {
+                        left: 100%;
+                    }
+                }
+                @keyframes hundreadpercent {
                     from {
                         width: 0;
                     }
@@ -185,4 +340,151 @@
                         width: 100%;
                     }
                 }
+            }
+            /* Technical_skills */
+            
+            .skills-area .tittle {
+                padding-bottom: 120px;
+                text-align: center;
+            }
+            
+            .skills-area .tittle h2 {
+                font: 500 33px/1 "Work Sans", sans-serif;
+                color: #151515;
+                display: inline-block;
+                position: relative;
+                padding: 10px 0 20px;
+                margin-bottom: 25px;
+            }
+            
+            .skills-area .tittle h2:after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 78px;
+                background: #d2cfcf;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                border-radius: 5px;
+                margin: 0 auto;
+            }
+            
+            .skills-area .tittle p {
+                font: 400 18px/30px "Work Sans", sans-serif;
+                color: rgba(0, 0, 0, 0.78);
+                padding-top: 25px;
+                max-width: 970px;
+                margin: 0 auto;
+            }
+            
+            .skills-area .skrill_row .extra_skills {
+                border-left: 1px solid #1f2235;
+                margin-left: 25px;
+                padding: 15px 0;
+                margin-top: 60px;
+            }
+            
+            .skills-area .skrill_row .extra_skills li {
+                font-size: 16px;
+                line-height: 45px;
+                font-family: $rubik;
+                color: #131212;
+                font-weight: $medium;
+                text-transform: uppercase;
+                padding-left: 45px;
+                position: relative;
+            }
+            
+            .skills-area .skrill_row .extra_skills li:after {
+                content: "";
+                position: absolute;
+                left: -10px;
+                top: 12px;
+                height: 20px;
+                width: 20px;
+                background: #1f2235;
+            }
+            
+            .skills-area .skrill_row h4 {
+                font-family: $rubik;
+                color: #131212;
+                font-weight: $regular;
+            }
+            
+            .skills-area .skrill_row .progress {
+                border-radius: 0;
+                overflow: visible;
+                height: 45px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                margin-bottom: 40px;
+            }
+            
+            .skills-area .skrill_row .progress .progress-bar {
+                -webkit-transition: width 2s ease-in-out;
+                -moz-transition: width 2s ease-in-out;
+                -ms-transition: width 2s ease-in-out;
+                -o-transition: width 2s ease-in-out;
+                transition: width 2s ease-in-out;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                position: relative;
+            }
+            
+            .skills-area .skrill_row .progress .progress-bar span {
+                position: absolute;
+                top: -55px;
+                color: #4b4b4b;
+                background: #dcdcdc;
+                height: 46px;
+                right: 0;
+                font: 400 15px/46px "Work Sans", sans-serif;
+                color: #4b4b4b;
+                width: 50px;
+            }
+            
+            .skills-area .skrill_row2 {
+                padding-top: 70px;
+            }
+            
+            .skills-area .skrill_row2 h4 {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            
+            .skills-area .skrill_row2 .heding {
+                margin-bottom: 30px;
+                font: 500 22px/1 "Work Sans", sans-serif;
+                text-transform: capitalize;
+            }
+            
+            .skills-area .skrill_row2 .progress {
+                height: 17px;
+                margin-bottom: 20px;
+            }
+            
+            .skills-area .skrill_row2 .progress .progress-bar span {
+                height: 33px;
+                width: 35px;
+                font-size: 14px;
+                line-height: 35px;
+                top: -43px;
+            }
+            
+            .heding {
+                font: 500 22px/1 "Work Sans", sans-serif;
+                color: #131212;
+                display: inline-block;
+                position: relative;
+            }
+            
+            .heding:after {
+                content: "";
+                position: absolute;
+                right: -60px;
+                top: 11px;
+                width: 76px;
+                height: 1px;
+                background: #121212;
             }

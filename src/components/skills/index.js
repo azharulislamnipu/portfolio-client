@@ -60,9 +60,18 @@ class Skills extends Component {
 
                 <div className="progress-wrrap  ninetyfivepercent">
                   <div className="progress-title">95%</div>
-                  <ProgressBar now={90} />
+                  <ProgressBar now={95} />
                 </div>
               </div>
+              <div className="single-skille ">
+
+               <h4>Node JS</h4>
+
+            <div className="progress-wrrap  hundreadpercent">
+              <div className="progress-title">100%</div>
+              <ProgressBar now={100} />
+            </div>
+            </div>
             </Col>
           </Row>
           <Row className='skrill_row2'>

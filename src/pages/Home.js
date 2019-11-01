@@ -5,6 +5,7 @@ import Counter from '../components/counter';
 import About from '../components/about';
 import Experience from '../components/experience';
 import Skills from '../components/skills';
+import Service from '../components/service';
 
 export default class Home extends Component {
     render() {
@@ -17,6 +18,7 @@ export default class Home extends Component {
         <About/>
         <Experience/>
         <Skills/>
+        <Service/>
         </div>
         )
     }

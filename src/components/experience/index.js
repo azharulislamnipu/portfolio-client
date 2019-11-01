@@ -49,12 +49,6 @@ class Experience extends Component {
             cssEase: "linear",
             nextArrow: <SampleNextArrow />,
             prevArrow: <SamplePrevArrow />,
-            beforeChange: function (currentSlide, nextSlide) {
-                console.log("before change", currentSlide, nextSlide);
-            },
-            afterChange: function (currentSlide) {
-                console.log("after change", currentSlide);
-            },
             responsive: [
                 {
                     breakpoint: 1024,

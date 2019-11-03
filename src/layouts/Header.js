@@ -10,6 +10,7 @@ import InputGroup  from 'react-bootstrap/InputGroup';
 import logo from '../img/header.png'
 import { IoIosSearch, IoMdMenu , IoMdClose} from "react-icons/io";
 import Fade from 'react-reveal/Fade';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 export default class Header extends Component {
     constructor(props) {
         super(props);
@@ -101,7 +102,7 @@ export default class Header extends Component {
                         <Nav className="m-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#About">About</Nav.Link>
-                        <Nav.Link href="#Service">Service</Nav.Link>
+                        <Nav.Link href="#servce-area">Service</Nav.Link>
                         <Nav.Link href="#Porfolio">Porfolio</Nav.Link>
                      
                         <NavDropdown title="Blog" id="basic-nav-dropdown"  className={ this.state.hover ? "show" : " "}   onMouseEnter={this.hoverOn} 

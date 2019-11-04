@@ -124,7 +124,7 @@ class Portfolios extends Component {
       speed: 400,
       autoplaySpeed: 3000,
       cssEase: "linear",
-      dragable:false,
+      draggable :false,
       nextArrow: <GridNextArrow />,
       prevArrow: <GridPrevArrow />
     };
@@ -133,7 +133,7 @@ class Portfolios extends Component {
       speed: 400,
       autoplaySpeed: 3000,
       cssEase: "linear",
-      dragable:false,
+      draggable :false,
       nextArrow: <GridContentNextArrow/>,
       prevArrow: <GridContentPrevArrow/>
     };

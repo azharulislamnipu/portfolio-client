@@ -9,7 +9,7 @@ class Services extends Component {
 
    render() {
       return (
-         <section className="service-area" id='servce-area'>
+         <section className="service-area" id='service-area'>
             <Particles className='particles-js' 
                 params={{
                

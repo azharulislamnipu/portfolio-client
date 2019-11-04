@@ -1473,12 +1473,18 @@ ul {
     margin-bottom: 30px;
 }
 
+.form-group {
+    margin-bottom: 30px;
+}
+
 .input-group .form-control {
     padding: 26px 15px;
     border: none;
     border-radius: 0;
     box-shadow: none;
     font-family: $barlow;
+    border-radius: 4px;
+    background-clip: padding-box;
     font-size: $base-font-size;
     &::-webkit-input-placeholder {
         color: #b1b1b1;
@@ -1497,21 +1503,27 @@ ul {
 .form-control {
     padding: 26px 15px;
     border-color: $gray;
-    border-radius: 0;
+    border-radius: 4px;
     box-shadow: none;
     font-family: $barlow;
     font-size: $base-font-size;
+    background-clip: content-box;
+    &:focus{
+        background-color:transparent;
+        box-shadow:none;
+        border-color: #171337;
+    }
     &::-webkit-input-placeholder {
-        color: #b1b1b1;
+        color: #171337;
     }
     &::-moz-placeholder {
-        color: #b1b1b1;
+        color: #171337;
     }
     &:-ms-input-placeholder {
-        color: #b1b1b1;
+        color: #171337;
     }
     &:-moz-placeholder {
-        color: #b1b1b1;
+        color: #171337;
     }
 }
 

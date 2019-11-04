@@ -94,13 +94,22 @@ export default class Header extends Component {
           
             <Container>
                 <Navbar expand="lg">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img src={logo} alt="logo"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"  children={this._getNavbarToggleIcon()} onClick={this.handleClick}/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
+                    
+                        <Link
+                        className='nav-link'
+                         activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration= {500}
+                        >Home</Link>
                
                         <Link
                         className='nav-link'
@@ -121,11 +130,20 @@ export default class Header extends Component {
                         offset={-70}
                         duration= {500}
                         >Service</Link>
-                 
-                        <Nav.Link href="#Porfolio">Porfolio</Nav.Link>
 
                         
-                     
+                        <Link
+                        className='nav-link'
+                         activeClass="active"
+                        to="portfolio"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration= {500}
+                        >Portfolio</Link>
+                 
+                       
+
                         <NavDropdown title="Blog" id="basic-nav-dropdown"  className={ this.state.hover ? "show" : " "}   onMouseEnter={this.hoverOn} 
             onMouseLeave={this.hoverOff}  disabled={this.state.hover ? "disabled" : " "}>
                      

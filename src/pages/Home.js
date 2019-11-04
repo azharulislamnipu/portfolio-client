@@ -7,6 +7,7 @@ import Experience from '../components/experience';
 import Skills from '../components/skills';
 import Services from '../components/service';
 import Portfolios from '../components/portfolio';
+import Contact from '../components/contact';
 
 
 export default class Home extends Component {
@@ -22,6 +23,7 @@ export default class Home extends Component {
         <Skills/>
         <Services/>
         <Portfolios/>
+        <Contact/>
         </div>
         )
     }

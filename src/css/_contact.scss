@@ -1,2 +1,49 @@
             /* 11. contact CSS
 /*----------------------------------------*/
+            
+            .contact-area {
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 100px;
+                background: #11998e;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to bottom, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+            }
+            
+            .contact-box {
+                transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                padding: 80px 80px 80px 80px;
+                background: #11998e;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to bottom, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+
+                .btn {
+                    background: #33d8bb !important;
+                    border: 1px solid #33d8bb !important;
+                    padding: 13px 25px !important;
+                    &:hover{
+                        background: transparent !important;
+                        border: 1px solid #fff !important;
+                    }
+                }
+                   
+            .react-datepicker-wrapper{
+             width:100%;
+            }
+            .form-control{
+                background: transparent;
+                &:focus{
+                    background: transparent;
+                }
+            }
+            textarea.form-control{
+                background: transparent;
+                color: #171337;
+                &:focus{
+                    background: transparent;
+                }
+            }
+
+            }

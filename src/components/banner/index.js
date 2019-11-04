@@ -9,7 +9,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export default class Banner extends Component {
     render() {
         return (
-            <section className='hero-bannner'>
+            <section className='hero-bannner' id='home'>
                 <div className="hero-inner-wrraper cliping-mask bg-primary">
                 <Container>
                 <Row> 

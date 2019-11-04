@@ -143,7 +143,7 @@ class Portfolios extends Component {
                <Container className='mb-5'>
             {<Title title='Works' headline='My Portfolio' align='text-right' position='justify-content-end' style={{ headingcolor: '#1f2235', titlecolor: 'rgb(110, 69, 225)' }} />}
             </Container>
-        <div className="container-fluid p-0 grrider">
+        <div className="container-fluid p-0 grrider" id='portfolio'>
           <Row className="no-gutters align-items-center align-content-center">
             <Col lg={3} md={4} sm={12}>
 

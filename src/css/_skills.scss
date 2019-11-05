@@ -8,11 +8,8 @@
                 margin-bottom: 0px;
                 padding: 120px 0px 120px 0px;
                 background: #ff9966;
-                /* fallback for old browsers */
                 background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
-                /* Chrome 10-25, Safari 5.1-6 */
                 background: linear-gradient(to right, #ff5e62, #ff9966);
-                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             }
             
             .progress-title {
@@ -348,148 +345,120 @@
             }
             /* Technical_skills */
             
-            .skills-area .tittle {
-                padding-bottom: 120px;
-                text-align: center;
-            }
-            
-            .skills-area .tittle h2 {
-                font: 500 33px/1 "Work Sans", sans-serif;
-                color: #151515;
-                display: inline-block;
+            .skills-area {
                 position: relative;
-                padding: 10px 0 20px;
-                margin-bottom: 25px;
-            }
-            
-            .skills-area .tittle h2:after {
-                content: "";
-                position: absolute;
-                height: 5px;
-                width: 78px;
-                background: #d2cfcf;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                border-radius: 5px;
-                margin: 0 auto;
-            }
-            
-            .skills-area .tittle p {
-                font: 400 18px/30px "Work Sans", sans-serif;
-                color: rgba(0, 0, 0, 0.78);
-                padding-top: 25px;
-                max-width: 970px;
-                margin: 0 auto;
-            }
-            
-            .skills-area .skrill_row .extra_skills {
-                border-left: 1px solid #1f2235;
-                margin-left: 25px;
-                padding: 15px 0;
-                margin-top: 60px;
-            }
-            
-            .skills-area .skrill_row .extra_skills li {
-                font-size: 16px;
-                line-height: 45px;
-                font-family: $rubik;
-                color: #131212;
-                font-weight: $medium;
-                text-transform: uppercase;
-                padding-left: 45px;
-                position: relative;
-            }
-            
-            .skills-area .skrill_row .extra_skills li:after {
-                content: "";
-                position: absolute;
-                left: -10px;
-                top: 12px;
-                height: 20px;
-                width: 20px;
-                background: #1f2235;
-            }
-            
-            .skills-area .skrill_row h4 {
-                font-family: $rubik;
-                color: #131212;
-                font-weight: $regular;
-            }
-            
-            .skills-area .skrill_row .progress {
-                border-radius: 0;
-                overflow: visible;
-                height: 45px;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-                margin-bottom: 40px;
-            }
-            
-            .skills-area .skrill_row .progress .progress-bar {
-                -webkit-transition: width 2s ease-in-out;
-                -moz-transition: width 2s ease-in-out;
-                -ms-transition: width 2s ease-in-out;
-                -o-transition: width 2s ease-in-out;
-                transition: width 2s ease-in-out;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-                position: relative;
-            }
-            
-            .skills-area .skrill_row .progress .progress-bar span {
-                position: absolute;
-                top: -55px;
-                color: #4b4b4b;
-                background: #dcdcdc;
-                height: 46px;
-                right: 0;
-                font: 400 15px/46px "Work Sans", sans-serif;
-                color: #4b4b4b;
-                width: 50px;
-            }
-            
-            .skills-area .skrill_row2 {
-                padding-top: 70px;
-            }
-            
-            .skills-area .skrill_row2 h4 {
-                font-size: 14px;
-                text-transform: uppercase;
-            }
-            
-            .skills-area .skrill_row2 .heding {
-                margin-bottom: 30px;
-                font: 500 22px/1 "Work Sans", sans-serif;
-                text-transform: capitalize;
-            }
-            
-            .skills-area .skrill_row2 .progress {
-                height: 17px;
-                margin-bottom: 20px;
-            }
-            
-            .skills-area .skrill_row2 .progress .progress-bar span {
-                height: 33px;
-                width: 35px;
-                font-size: 14px;
-                line-height: 35px;
-                top: -43px;
+           
+                .skrill_row {
+                    .extra_skills {
+                        border-left: 1px solid #1f2235;
+                        margin-left: 25px;
+                        padding: 15px 0;
+                        margin-top: 60px;
+                    }
+                    .extra_skills li {
+                        font-size: 16px;
+                        line-height: 45px;
+                        font-family: $rubik;
+                        color: #131212;
+                        font-weight: $medium;
+                        text-transform: uppercase;
+                        padding-left: 45px;
+                        position: relative;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            left: -10px;
+                            top: 12px;
+                            height: 20px;
+                            width: 20px;
+                            background: #1f2235;
+                        }
+                    }
+                    h4 {
+                        font-family: $rubik;
+                        color: #131212;
+                        font-weight: $regular;
+                    }
+
+                    .progress {
+                        border-radius: 0;
+                        overflow: visible;
+                        height: 45px;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                        margin-bottom: 40px;
+                    }
+                    .progress .progress-bar {
+                        -webkit-transition: width 2s ease-in-out;
+                        -moz-transition: width 2s ease-in-out;
+                        -ms-transition: width 2s ease-in-out;
+                        -o-transition: width 2s ease-in-out;
+                        transition: width 2s ease-in-out;
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                        position: relative;
+                    }
+                    .progress .progress-bar span {
+                        position: absolute;
+                        top: -55px;
+                        color: #4b4b4b;
+                        background: #dcdcdc;
+                        height: 46px;
+                        right: 0;
+                        font: 400 15px/46px "Work Sans", sans-serif;
+                        color: #4b4b4b;
+                        width: 50px;
+                    }
+
+                }
+
+                .skrill_row2 {
+                    padding-top: 70px;
+
+                    h4 {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                    }
+                    .heding {
+                        margin-bottom: 30px;
+                        font-family: $rubik;
+                        font-weight: $medium;
+                        font-size: 22px;
+                        text-transform: capitalize;
+                        line-height: 22px;
+                    }
+                    .progress {
+                        height: 17px;
+                        margin-bottom: 20px;
+                    }
+
+                    .progress .progress-bar span {
+                        height: 33px;
+                        width: 35px;
+                        font-size: 14px;
+                        line-height: 35px;
+                        top: -43px;
+                    }
+                }
             }
             
             .heding {
-                font: 500 22px/1 "Work Sans", sans-serif;
+                font-family: $rubik;
+                font-weight: $medium;
+                font-size: 22px;
+                line-height: 22px;
                 color: #131212;
                 display: inline-block;
                 position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: -60px;
+                    top: 11px;
+                    width: 76px;
+                    height: 1px;
+                    background: #121212;
+                }
             }
             
-            .heding:after {
-                content: "";
-                position: absolute;
-                right: -60px;
-                top: 11px;
-                width: 76px;
-                height: 1px;
-                background: #121212;
-            }
+           

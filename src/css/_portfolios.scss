@@ -3,11 +3,8 @@
     overflow: hidden;
     padding-top: 100px;
     background: #16A085;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F4D03F, #16A085);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F4D03F, #16A085);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .grrider {
@@ -34,6 +31,24 @@
     -webkit-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
+
+    &:hover {
+        -webkit-transition: all 1s ease 0s;
+        -o-transition: all 1s ease 0s;
+        transition: all 1s ease 0s;
+        .slick-arrow.slick-prev {
+            opacity: 1 !important;
+            -webkit-transition: all 1s ease 0s;
+            -o-transition: all 1s ease 0s;
+            transition: all 1s ease 0s;
+        }
+        .slick-arrow.slick-next {
+            opacity: 1 !important;
+            -webkit-transition: all 1s ease 0s;
+            -o-transition: all 1s ease 0s;
+            transition: all 1s ease 0s;
+        }
+    }
 }
 
 .slick-arrow.slick-prev {
@@ -41,50 +56,25 @@
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
 }
-
-.gridderGallery:hover {
-    -webkit-transition: all 1s ease 0s;
-    -o-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
-    .slick-arrow.slick-prev {
-        opacity: 1 !important;
-        -webkit-transition: all 1s ease 0s;
-        -o-transition: all 1s ease 0s;
-        transition: all 1s ease 0s;
-    }
-    .slick-arrow.slick-next {
-        opacity: 1 !important;
-        -webkit-transition: all 1s ease 0s;
-        -o-transition: all 1s ease 0s;
-        transition: all 1s ease 0s;
-    }
-}
-
-.overlay {
-    position: relative
-}
-
-.overlay:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(65, 34, 142, .9);
-    transition: all .3s ease 0s
-}
-
 .overlay {
     position: relative;
-    z-index: 2
-}
-
-.overlay.dark-1:before {
-    background: #fe8c00;
-    background: -webkit-linear-gradient(to right, #f83600d1, #fe8c00de);
-    background: linear-gradient(to right, #f83600d1, #fe8c00de);
-    background: linear-gradient(to right, #f83600d1, #fe8c00de);
+    z-index: 2;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(65, 34, 142, .9);
+        transition: all .3s ease 0s
+    }
+   &.dark-1:before {
+        background: #fe8c00;
+        background: -webkit-linear-gradient(to right, #f83600d1, #fe8c00de);
+        background: linear-gradient(to right, #f83600d1, #fe8c00de);
+        background: linear-gradient(to right, #f83600d1, #fe8c00de);
+    }
 }
 
 .gridder-content {
@@ -97,48 +87,44 @@
     }
 }
 
-.single-portfolio.overlay::before {
-    opacity: 0;
-    -webkit-transition: all .5s ease 0s;
-    -o-transition: all .5s ease 0s;
-    transition: all .5s ease 0s;
-    -webkit-transform: scaleX(1.2);
-    -ms-transform: scaleX(1.2);
-    transform: scaleX(1.2);
-}
+.single-portfolio{
+    &.overlay{
+        &::before {
+            opacity: 0;
+            -webkit-transition: all .5s ease 0s;
+            -o-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
+            -webkit-transform: scaleX(1.2);
+            -ms-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+        }
 
-.single-portfolio.overlay:hover::before {
-    opacity: 1;
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1);
+        &:hover::before {
+            opacity: 1;
+            -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
 }
 
 .project-title {
     bottom: 35px;
     left: 35px;
     position: absolute;
-    z-index: 2
-}
+    z-index: 2;
 
-.small .project-title {
-    bottom: 20px;
-    left: 30px
-}
-
-.project-title h3 {
-    font-weight: 700
-}
-
-.project-title h3,
-.project-title h6 {
+    h3 {
+        font-weight: 700
+    }
+     h3 , h6 {
     opacity: 0;
     position: relative;
     top: 20px;
     transition: all .3s ease 0s
 }
 
-.project-title h6 {
+h6 {
     line-height: 24px;
     margin-bottom: 0;
     -webkit-transition-delay: 0s;
@@ -146,55 +132,65 @@
     transition-delay: 0s
 }
 
-.single-portfolio:hover .project-title h6 {
-    -webkit-transition-delay: .2s;
-    -o-transition-delay: .2s;
-    transition-delay: .2s
 }
 
-.single-portfolio:hover .project-title h3,
-.single-portfolio:hover .project-title h6 {
-    opacity: 1;
-    top: 0
+.small .project-title {
+    bottom: 20px;
+    left: 30px
 }
 
-.single-portfolio .icon a {
-    color: #fff;
-    display: block;
-    font-size: 40px;
-    opacity: 0;
-    position: absolute;
-    right: 60px;
-    bottom: 65px;
-    -webkit-transform: scale(.5);
-    -ms-transform: scale(.5);
-    transform: scale(.5);
-    -webkit-transition: all .4s ease 0s;
-    -o-transition: all .4s ease 0s;
-    transition: all .4s ease 0s
+.single-portfolio{
+    &:hover {
+        .project-title h6 {
+            -webkit-transition-delay: .2s;
+            -o-transition-delay: .2s;
+            transition-delay: .2s
+        }
+
+       .project-title h3, .project-title h6 {
+            opacity: 1;
+            top: 0
+        }
+
+        .icon a {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1)
+        }
+    }
+
+    .icon a {
+        color: $white;
+        display: block;
+        font-size: 40px;
+        opacity: 0;
+        position: absolute;
+        right: 60px;
+        bottom: 65px;
+        -webkit-transform: scale(.5);
+        -ms-transform: scale(.5);
+        transform: scale(.5);
+        -webkit-transition: all .4s ease 0s;
+        -o-transition: all .4s ease 0s;
+        transition: all .4s ease 0s
+    }
 }
 
-.single-portfolio:hover .icon a {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1)
-}
-
-.hover-style2 .project-title {
-    bottom: 50%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin-bottom: -30px;
-}
-
-.hover-style2 .single-portfolio {
-    cursor: pointer
-}
-
-.hover-style2 .project-title h3 {
-    font-size: 24px
+.hover-style2 {
+    .project-title {
+        bottom: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-bottom: -30px;
+    }
+    .single-portfolio {
+        cursor: pointer
+    }
+    .project-title h3 {
+        font-size: 24px
+    }
 }
 
 .project-details {

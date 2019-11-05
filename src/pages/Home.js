@@ -8,6 +8,8 @@ import Skills from '../components/skills';
 import Services from '../components/service';
 import Portfolios from '../components/portfolio';
 import Contact from '../components/contact';
+import SocialMedia from '../components/social-media';
+import Footer from '../layouts/Footer';
 
 
 export default class Home extends Component {
@@ -24,6 +26,8 @@ export default class Home extends Component {
         <Services/>
         <Portfolios/>
         <Contact/>
+        <SocialMedia/>
+        <Footer/>
         </div>
         )
     }

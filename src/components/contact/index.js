@@ -59,33 +59,60 @@ class Contact extends Component {
                 <Form.Group controlId="phonenumber">
                   <Form.Control type="text" placeholder="Phonenumber" />
                 </Form.Group>
-
-                <Button type="submit">PROJECT ESTIMATE</Button>
               </Col>
               <Col lg={6} md={6} sm={12}>
               <Form.Group controlId="date">
                     <Form.Control as="textarea" rows="4" placeholder="Message"/>
                 </Form.Group>
               </Col>
-            
+              <Col lg={12} md={12} sm={12}>
+
+              <Button type="submit">PROJECT ESTIMATE</Button>
+              </Col>
             </Row>
           </Form>
         </Container>
 
         <Container>
           <Row>
-            <Col ls={3} md={3} sm={6}>
-            <div className="conatact-mail-box">
+            <Col lg={4} md={4} sm={6}>
+            <div className="conatact-info-box">
               <div className="conatact-icon"><i className="fa fa-envelope"></i></div>
               <div className="box-content">
                 <h4 className="conatact-title">Email:</h4>
                 <div className="conatact-content">
-                  <p>hello@growth.com
-                    subash.ui.ux@gmail.com</p>
+                  <a href="mailto:hello@growth.com">hello@growth.com</a>
+                  <a href="subash.ui.ux@gmail.com">hello@growth.com</a>
                  </div>
                </div>
             </div>
             </Col>
+            <Col lg={4} md={4} sm={12}>
+            <div className="conatact-info-box">
+              <div className="conatact-icon"><i className="fa fa-phone"></i></div>
+              <div className="box-content">
+                <h4 className="conatact-title">Phone:</h4>
+                <div className="conatact-content">
+                  <a href="tel:+8801726901406">+8801726901406</a>
+                  <a href="tel:+8801986926212">+8801986926212</a>
+                 </div>
+               </div>
+            </div>
+            </Col>
+
+            <Col lg={4} md={4} sm={12}>
+            <div className="conatact-info-box">
+              <div className="conatact-icon"><i className="fa fa-map-marker"></i></div>
+              <div className="box-content">
+                <h4 className="conatact-title">ADDRESS:</h4>
+                <div className="conatact-content">
+                  <p>1600 Amphitheatre Parkway
+Mountain View, Canada</p>
+                 </div>
+               </div>
+            </div>
+            </Col>
+         
           </Row>
         </Container>
 

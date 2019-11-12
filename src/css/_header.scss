@@ -1,5 +1,5 @@
 .header-area.sticky-menu {
-    background-color: $slateblue;
+    background-color: #24204f;
     position: fixed;
     padding: 0;
     top: 0;
@@ -122,13 +122,13 @@
     font-weight: $medium;
     justify-content: center;
     align-items: center;
-
     &:hover,
     &:focus {
         color: $white;
         background-color: $light-aqua;
     }
 }
+
 .dropdown-item.active,
 .dropdown-item:active {
     background-color: $light-aqua;

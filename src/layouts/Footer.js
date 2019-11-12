@@ -26,7 +26,7 @@ export class Footer extends Component {
               </Row>
               <Row className='align-items-center pb-30 pt-30'>
                   <Col lg={12} md={12} sm={12} className='text-center'>
-                   <p>   Copyright By@azhardevs - 2019  </p>
+                   <p>   Copyright By@azhardevs - {new Date().getFullYear()} </p>
                   </Col>
                 
                 </Row>

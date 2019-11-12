@@ -4,8 +4,8 @@
 
 <strong>Run This Command Before Run This Project </strong> <br>
 
-npm i --save-dev autoprefixer babel-core babel-loader babel-preset-env clean-webpack-plugin css-loader file-loader html-webpack-plugin image-webpack-loader imagemin-webpack-plugin jquery lodash mini-css-extract-plugin node-sass optimize-css-assets-webpack-plugin postcss-loader sass-loader style-loader uglifyjs-webpack-plugin url-loader webpack webpack-cli webpack-dev-server react react-bootstrap react-dom react-router-dom redux-devtools redux resolve-url-loader
-
+npm i --save-dev autoprefixer babel-core babel-loader babel-plugin-transform-class-properties babel-preset-env babel-preset-es2016 babel-preset-react bootstrap clean-webpack-plugin css-loader font-awesome html-webpack-plugin image-webpack-loader imagemin-webpack-plugin jquery lodash mini-css-extract-plugin node-sass optimize-css-assets-webpack-plugin postcss-loader react react-anchor-link-smooth-scroll react-bootstrap react-countup react-datepicker react-dom react-icons react-particles-js react-reveal react-router-dom react-scroll react-slick redux redux-devtools resolve-url-loader sass-loader slick-carousel style-loader terser-webpack-plugin url-loader webpack webpack-cli webpack-dev-server
+ 
 
 <strong> App Run </strong> </br>
 npm run dev </br>

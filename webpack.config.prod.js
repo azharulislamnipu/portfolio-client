@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 var ImageminPlugin = require('imagemin-webpack-plugin').default;
 module.exports = {
   entry: {
@@ -19,8 +19,9 @@ module.exports = {
     splitChunks:{
       chunks:'all'
     },
+    minimize: true,
     minimizer: [
-      new UglifyJsPlugin(),
+      new TerserPlugin(),
       new OptimizeCSSAssetsPlugin()
     ]
   },
@@ -28,9 +29,9 @@ module.exports = {
   module: {
     rules: [
         {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         use: {loader: 'babel-loader'},
-        exclude: /node_modules/
+        exclude: /node_modules/,
         },
         {
           test: /\.(sa|sc|c)ss$/,
@@ -63,11 +64,16 @@ module.exports = {
       filename: "assets/css/styles.css",
     }),
     new HtmlWebpackPlugin({  // Also generate a test.html
-        filename: 'index.html',
-        template: './src/index.html',
+      template: path.resolve(__dirname, 'src/', 'index.html'),
+      filename: 'index.html',
         inject: true
       }),
       new ImageminPlugin(),
       new CleanWebpackPlugin()
-  ]
+  ],
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+}
 };
